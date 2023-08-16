@@ -1,0 +1,5750 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../tables/">
+      
+      
+        <link rel="next" href="../wikilinks/">
+      
+      
+      <link rel="icon" href="../../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.2.0-b3">
+    
+    
+      
+        <title>toc - pyRevit</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../../assets/stylesheets/main.83068744.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../../assets/stylesheets/palette.85d0ee34.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../../../../../style.css">
+    
+    <script>__md_scope=new URL("../../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#pyrevit.coreutils.markdown.extensions.toc" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="https://pyrevitlabs.notion.site" title="pyRevit" class="md-header__button md-logo" aria-label="pyRevit" data-md-component="logo">
+      
+  <img src="../../../../../../static/pyRevitLogo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            pyRevit
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              toc
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/eirannejad/pyRevit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    eirannejad/pyRevit
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="https://pyrevitlabs.notion.site" title="pyRevit" class="md-nav__button md-logo" aria-label="pyRevit" data-md-component="logo">
+      
+  <img src="../../../../../../static/pyRevitLogo.svg" alt="logo">
+
+    </a>
+    pyRevit
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/eirannejad/pyRevit" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    eirannejad/pyRevit
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../CONTRIBUTING/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Contributing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../CODE_OF_CONDUCT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Code Of Conduct
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../../CREDITS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Credits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Reference API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Reference API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    pyrevit
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            pyrevit
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    api
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../compat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    compat
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    coreutils
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_3">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            coreutils
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../apidocs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    apidocs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../appdata/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    appdata
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../applocales/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    applocales
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../assmutils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    assmutils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../charts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    charts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../colors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    colors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../configparser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    configparser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../envvars/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    envvars
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../logger/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    logger
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_3_11" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    markdown
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_3_11">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_1_3_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1_3_11">
+            <span class="md-nav__icon md-icon"></span>
+            markdown
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../__version__/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    __version__
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockparser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    blockparser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../blockprocessors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    blockprocessors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_3_11_4" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    extensions
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_3_11_4">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_5_1_3_11_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5_1_3_11_4">
+            <span class="md-nav__icon md-icon"></span>
+            extensions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../abbr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    abbr
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../admonition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    admonition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../attr_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    attr_list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../codehilite/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    codehilite
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../def_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    def_list
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../extra/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    extra
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fenced_code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    fenced_code
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../footnotes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    footnotes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../headerid/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    headerid
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../meta/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    meta
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nl2br/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    nl2br
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../sane_lists/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    sane_lists
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smart_strong/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    smart_strong
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smarty/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    smarty
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tables/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    tables
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    toc
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    toc
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc" class="md-nav__link">
+    pyrevit.coreutils.markdown.extensions.toc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc-attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.IDCOUNT_RE" class="md-nav__link">
+    IDCOUNT_RE
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc-classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor" class="md-nav__link">
+    TocTreeprocessor
+  </a>
+  
+    <nav class="md-nav" aria-label="TocTreeprocessor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor-attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.marker" class="md-nav__link">
+    marker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.title" class="md-nav__link">
+    title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.base_level" class="md-nav__link">
+    base_level
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.slugify" class="md-nav__link">
+    slugify
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.sep" class="md-nav__link">
+    sep
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.use_anchors" class="md-nav__link">
+    use_anchors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.use_permalinks" class="md-nav__link">
+    use_permalinks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.header_rgx" class="md-nav__link">
+    header_rgx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.markdown" class="md-nav__link">
+    markdown
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor-functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.iterparent" class="md-nav__link">
+    iterparent()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.replace_marker" class="md-nav__link">
+    replace_marker()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.set_level" class="md-nav__link">
+    set_level()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.add_anchor" class="md-nav__link">
+    add_anchor()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.add_permalink" class="md-nav__link">
+    add_permalink()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.build_toc_div" class="md-nav__link">
+    build_toc_div()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.run" class="md-nav__link">
+    run()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension" class="md-nav__link">
+    TocExtension
+  </a>
+  
+    <nav class="md-nav" aria-label="TocExtension">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension-attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.TreeProcessorClass" class="md-nav__link">
+    TreeProcessorClass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.config" class="md-nav__link">
+    config
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension-functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.getConfig" class="md-nav__link">
+    getConfig()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.getConfigs" class="md-nav__link">
+    getConfigs()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.getConfigInfo" class="md-nav__link">
+    getConfigInfo()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.setConfig" class="md-nav__link">
+    setConfig()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.setConfigs" class="md-nav__link">
+    setConfigs()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.extendMarkdown" class="md-nav__link">
+    extendMarkdown()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.reset" class="md-nav__link">
+    reset()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc-functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.slugify" class="md-nav__link">
+    slugify()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.unique" class="md-nav__link">
+    unique()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.stashedHTML2text" class="md-nav__link">
+    stashedHTML2text()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.nest_toc_tokens" class="md-nav__link">
+    nest_toc_tokens()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.makeExtension" class="md-nav__link">
+    makeExtension()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../wikilinks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    wikilinks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../inlinepatterns/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    inlinepatterns
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../odict/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    odict
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../postprocessors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    postprocessors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../preprocessors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    preprocessors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../serializers/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    serializers
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../treeprocessors/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    treeprocessors
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../util/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    util
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../mathnet/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    mathnet
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../moduleutils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    moduleutils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../pyutils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pyutils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../ribbon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ribbon
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../yaml/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    yaml
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../engine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    engine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_5" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../extensions/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    extensions
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_5">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            extensions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../extensions/cacher_asc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cacher_asc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../extensions/cacher_bin/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    cacher_bin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../extensions/components/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    components
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../extensions/extensionmgr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    extensionmgr
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../extensions/extpackages/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    extpackages
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../extensions/genericcomps/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    genericcomps
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../extensions/parser/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    parser
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_6" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../forms/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    forms
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_6">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_6">
+            <span class="md-nav__icon md-icon"></span>
+            forms
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../forms/toaster/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    toaster
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../forms/utils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    utils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../framework/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    framework
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_8" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../interop/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    interop
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_8">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            interop
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../interop/adc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    adc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../interop/bbx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bbx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../interop/dxf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    dxf
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../interop/ifc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ifc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../interop/pts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pts
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../interop/rhino/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    rhino
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../interop/stl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    stl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../interop/xl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    xl
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../labs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    labs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_10" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../loader/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    loader
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_10">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_10">
+            <span class="md-nav__icon md-icon"></span>
+            loader
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../loader/asmmaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    asmmaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../loader/hooks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    hooks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../loader/sessioninfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    sessioninfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../loader/sessionmgr/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    sessionmgr
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../loader/systemdiag/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    systemdiag
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../loader/uimaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    uimaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_11" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../output/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    output
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_11">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_11">
+            <span class="md-nav__icon md-icon"></span>
+            output
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../output/linkmaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    linkmaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_12" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../preflight/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    preflight
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_12">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_12">
+            <span class="md-nav__icon md-icon"></span>
+            preflight
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../preflight/case/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    case
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_13" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../revit/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    revit
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_13">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            revit
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/bim360/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bim360
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_13_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../revit/db/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    db
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_13_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_1_13_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_13_2">
+            <span class="md-nav__icon md-icon"></span>
+            db
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/db/create/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    create
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/db/delete/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    delete
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/db/ensure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ensure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/db/failure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    failure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/db/pickling/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pickling
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/db/query/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    query
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/db/select/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    select
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/db/transaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    transaction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/db/update/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    update
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/dc3dserver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    dc3dserver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/features/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    features
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/files/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    files
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/geom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    geom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/journals/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    journals
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/report/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    report
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/selection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    selection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/serverutils/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    serverutils
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/tabs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    tabs
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/ui/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ui
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../revit/units/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    units
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_14" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../routes/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    routes
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_14">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_14">
+            <span class="md-nav__icon md-icon"></span>
+            routes
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../routes/api/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    api
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_14_2" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../routes/server/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    server
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_14_2">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_5_1_14_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_14_2">
+            <span class="md-nav__icon md-icon"></span>
+            server
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../routes/server/base/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    base
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../routes/server/exceptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    exceptions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../routes/server/handler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    handler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../routes/server/router/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    router
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../routes/server/server/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    server
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../routes/server/serverinfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    serverinfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_15" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../runtime/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    runtime
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_15">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_15">
+            <span class="md-nav__icon md-icon"></span>
+            runtime
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../runtime/bundletypemaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    bundletypemaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../runtime/dynamotypemaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    dynamotypemaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../runtime/invoketypemaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    invoketypemaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../runtime/pythontypemaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    pythontypemaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../runtime/typemaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    typemaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../runtime/types/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    types
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../runtime/urltypemaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    urltypemaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../script/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    script
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_17" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../telemetry/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    telemetry
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_17">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_17_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_17">
+            <span class="md-nav__icon md-icon"></span>
+            telemetry
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../telemetry/events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../telemetry/record/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    record
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_18" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../unittests/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    unittests
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_18">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_18_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_18">
+            <span class="md-nav__icon md-icon"></span>
+            unittests
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../unittests/runner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    runner
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../userconfig/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    userconfig
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1_20" >
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../versionmgr/" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    versionmgr
+  </span>
+  
+
+            </a>
+            
+              <label class="md-nav__link " for="__nav_5_1_20">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_1_20_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_1_20">
+            <span class="md-nav__icon md-icon"></span>
+            versionmgr
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../versionmgr/about/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    about
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../versionmgr/updater/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    updater
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../versionmgr/upgrade/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    upgrade
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../versionmgr/urls/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    urls
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc" class="md-nav__link">
+    pyrevit.coreutils.markdown.extensions.toc
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc-attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.IDCOUNT_RE" class="md-nav__link">
+    IDCOUNT_RE
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc-classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor" class="md-nav__link">
+    TocTreeprocessor
+  </a>
+  
+    <nav class="md-nav" aria-label="TocTreeprocessor">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor-attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.marker" class="md-nav__link">
+    marker
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.title" class="md-nav__link">
+    title
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.base_level" class="md-nav__link">
+    base_level
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.slugify" class="md-nav__link">
+    slugify
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.sep" class="md-nav__link">
+    sep
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.use_anchors" class="md-nav__link">
+    use_anchors
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.use_permalinks" class="md-nav__link">
+    use_permalinks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.header_rgx" class="md-nav__link">
+    header_rgx
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.markdown" class="md-nav__link">
+    markdown
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor-functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.iterparent" class="md-nav__link">
+    iterparent()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.replace_marker" class="md-nav__link">
+    replace_marker()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.set_level" class="md-nav__link">
+    set_level()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.add_anchor" class="md-nav__link">
+    add_anchor()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.add_permalink" class="md-nav__link">
+    add_permalink()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.build_toc_div" class="md-nav__link">
+    build_toc_div()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.run" class="md-nav__link">
+    run()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension" class="md-nav__link">
+    TocExtension
+  </a>
+  
+    <nav class="md-nav" aria-label="TocExtension">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension-attributes" class="md-nav__link">
+    Attributes
+  </a>
+  
+    <nav class="md-nav" aria-label="Attributes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.TreeProcessorClass" class="md-nav__link">
+    TreeProcessorClass
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.config" class="md-nav__link">
+    config
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension-functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.getConfig" class="md-nav__link">
+    getConfig()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.getConfigs" class="md-nav__link">
+    getConfigs()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.getConfigInfo" class="md-nav__link">
+    getConfigInfo()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.setConfig" class="md-nav__link">
+    setConfig()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.setConfigs" class="md-nav__link">
+    setConfigs()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.extendMarkdown" class="md-nav__link">
+    extendMarkdown()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.TocExtension.reset" class="md-nav__link">
+    reset()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc-functions" class="md-nav__link">
+    Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.slugify" class="md-nav__link">
+    slugify()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.unique" class="md-nav__link">
+    unique()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.stashedHTML2text" class="md-nav__link">
+    stashedHTML2text()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.nest_toc_tokens" class="md-nav__link">
+    nest_toc_tokens()
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pyrevit.coreutils.markdown.extensions.toc.makeExtension" class="md-nav__link">
+    makeExtension()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>toc</h1>
+
+<div class="doc doc-object doc-module">
+
+
+<a id="pyrevit.coreutils.markdown.extensions.toc"></a>
+  <div class="doc doc-contents first">
+  
+      <p>Table of Contents Extension for Python-Markdown.</p>
+<p>See <a href="https://pythonhosted.org/Markdown/extensions/toc.html">https://pythonhosted.org/Markdown/extensions/toc.html</a>
+for documentation.</p>
+<p>Original code Copyright 2008 <a href="http://codezen.org">Jack Miller</a></p>
+<p>All changes Copyright 2008-2014 The Python Markdown Project</p>
+<p>License: <a href="http://www.opensource.org/licenses/bsd-license.php">BSD</a></p>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+<h2 id="pyrevit.coreutils.markdown.extensions.toc-attributes">Attributes</h2>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h3 id="pyrevit.coreutils.markdown.extensions.toc.IDCOUNT_RE" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">IDCOUNT_RE</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;^(.*)_([0-9]+)$&#39;</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-module-attribute"><code>module-attribute</code></small>
+  </span>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+<h2 id="pyrevit.coreutils.markdown.extensions.toc-classes">Classes</h2>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">TocTreeprocessor</span><span class="p">(</span><span class="n">md</span><span class="p">,</span> <span class="n">config</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="pyrevit.coreutils.markdown.treeprocessors.Treeprocessor" href="../../treeprocessors/#pyrevit.coreutils.markdown.treeprocessors.Treeprocessor">Treeprocessor</a></code></p>
+
+  
+      <p>TOC Tree processor.</p>
+
+              <details class="quote">
+                <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">126</span>
+<span class="normal">127</span>
+<span class="normal">128</span>
+<span class="normal">129</span>
+<span class="normal">130</span>
+<span class="normal">131</span>
+<span class="normal">132</span>
+<span class="normal">133</span>
+<span class="normal">134</span>
+<span class="normal">135</span>
+<span class="normal">136</span>
+<span class="normal">137</span>
+<span class="normal">138</span>
+<span class="normal">139</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">md</span><span class="p">,</span> <span class="n">config</span><span class="p">):</span>
+    <span class="nb">super</span><span class="p">(</span><span class="n">TocTreeprocessor</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">md</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">marker</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;marker&quot;</span><span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">base_level</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;baselevel&quot;</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">slugify</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;slugify&quot;</span><span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">sep</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;separator&quot;</span><span class="p">]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_anchors</span> <span class="o">=</span> <span class="n">parseBoolValue</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;anchorlink&quot;</span><span class="p">])</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_permalinks</span> <span class="o">=</span> <span class="n">parseBoolValue</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s2">&quot;permalink&quot;</span><span class="p">],</span> <span class="kc">False</span><span class="p">)</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_permalinks</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">use_permalinks</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s2">&quot;permalink&quot;</span><span class="p">]</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">header_rgx</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s2">&quot;[Hh][123456]&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+<h4 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor-attributes">Attributes</h4>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.marker" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">marker</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s1">&#39;marker&#39;</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.title" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">title</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.base_level" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">base_level</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;baselevel&#39;</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.slugify" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">slugify</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s1">&#39;slugify&#39;</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.sep" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">sep</span> <span class="o">=</span> <span class="n">config</span><span class="p">[</span><span class="s1">&#39;separator&#39;</span><span class="p">]</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.use_anchors" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">use_anchors</span> <span class="o">=</span> <span class="n">parseBoolValue</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;anchorlink&#39;</span><span class="p">])</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.use_permalinks" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">use_permalinks</span> <span class="o">=</span> <span class="n">parseBoolValue</span><span class="p">(</span><span class="n">config</span><span class="p">[</span><span class="s1">&#39;permalink&#39;</span><span class="p">],</span> <span class="kc">False</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.header_rgx" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">header_rgx</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="s1">&#39;[Hh][123456]&#39;</span><span class="p">)</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.markdown" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">markdown</span> <span class="o">=</span> <span class="n">markdown_instance</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+
+<h4 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor-functions">Functions</h4>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.iterparent" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">iterparent</span><span class="p">(</span><span class="n">root</span><span class="p">)</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Iterator wrapper to get parent and child all at once.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">141</span>
+<span class="normal">142</span>
+<span class="normal">143</span>
+<span class="normal">144</span>
+<span class="normal">145</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">iterparent</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Iterator wrapper to get parent and child all at once.&quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">parent</span> <span class="ow">in</span> <span class="n">root</span><span class="o">.</span><span class="n">iter</span><span class="p">():</span>
+        <span class="k">for</span> <span class="n">child</span> <span class="ow">in</span> <span class="n">parent</span><span class="p">:</span>
+            <span class="k">yield</span> <span class="n">parent</span><span class="p">,</span> <span class="n">child</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.replace_marker" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">replace_marker</span><span class="p">(</span><span class="n">root</span><span class="p">,</span> <span class="n">elem</span><span class="p">)</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Replace marker with elem.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">147</span>
+<span class="normal">148</span>
+<span class="normal">149</span>
+<span class="normal">150</span>
+<span class="normal">151</span>
+<span class="normal">152</span>
+<span class="normal">153</span>
+<span class="normal">154</span>
+<span class="normal">155</span>
+<span class="normal">156</span>
+<span class="normal">157</span>
+<span class="normal">158</span>
+<span class="normal">159</span>
+<span class="normal">160</span>
+<span class="normal">161</span>
+<span class="normal">162</span>
+<span class="normal">163</span>
+<span class="normal">164</span>
+<span class="normal">165</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">replace_marker</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">root</span><span class="p">,</span> <span class="n">elem</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Replace marker with elem.&quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">iterparent</span><span class="p">(</span><span class="n">root</span><span class="p">):</span>
+        <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">itertext</span><span class="p">())</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">text</span><span class="p">:</span>
+            <span class="k">continue</span>
+
+        <span class="c1"># To keep the output from screwing up the</span>
+        <span class="c1"># validation by putting a &lt;div&gt; inside of a &lt;p&gt;</span>
+        <span class="c1"># we actually replace the &lt;p&gt; in its entirety.</span>
+        <span class="c1"># We do not allow the marker inside a header as that</span>
+        <span class="c1"># would causes an enless loop of placing a new TOC</span>
+        <span class="c1"># inside previously generated TOC.</span>
+        <span class="k">if</span> <span class="n">c</span><span class="o">.</span><span class="n">text</span> <span class="ow">and</span> <span class="n">c</span><span class="o">.</span><span class="n">text</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span> <span class="o">==</span> <span class="bp">self</span><span class="o">.</span><span class="n">marker</span> <span class="ow">and</span> \
+           <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">header_rgx</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">tag</span><span class="p">)</span> <span class="ow">and</span> <span class="n">c</span><span class="o">.</span><span class="n">tag</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;pre&#39;</span><span class="p">,</span> <span class="s1">&#39;code&#39;</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">p</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="n">c</span><span class="p">:</span>
+                    <span class="n">p</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">elem</span>
+                    <span class="k">break</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.set_level" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">set_level</span><span class="p">(</span><span class="n">elem</span><span class="p">)</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Adjust header level according to base level.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">167</span>
+<span class="normal">168</span>
+<span class="normal">169</span>
+<span class="normal">170</span>
+<span class="normal">171</span>
+<span class="normal">172</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">set_level</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">elem</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Adjust header level according to base level.&quot;&quot;&quot;</span>
+    <span class="n">level</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">elem</span><span class="o">.</span><span class="n">tag</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">])</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">base_level</span>
+    <span class="k">if</span> <span class="n">level</span> <span class="o">&gt;</span> <span class="mi">6</span><span class="p">:</span>
+        <span class="n">level</span> <span class="o">=</span> <span class="mi">6</span>
+    <span class="n">elem</span><span class="o">.</span><span class="n">tag</span> <span class="o">=</span> <span class="s1">&#39;h</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">level</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.add_anchor" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">add_anchor</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">elem_id</span><span class="p">)</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">174</span>
+<span class="normal">175</span>
+<span class="normal">176</span>
+<span class="normal">177</span>
+<span class="normal">178</span>
+<span class="normal">179</span>
+<span class="normal">180</span>
+<span class="normal">181</span>
+<span class="normal">182</span>
+<span class="normal">183</span>
+<span class="normal">184</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_anchor</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">elem_id</span><span class="p">):</span>  <span class="c1"># @ReservedAssignment</span>
+    <span class="n">anchor</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="n">anchor</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">c</span><span class="o">.</span><span class="n">text</span>
+    <span class="n">anchor</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;href&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;#&quot;</span> <span class="o">+</span> <span class="n">elem_id</span>
+    <span class="n">anchor</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;class&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;toclink&quot;</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">elem</span> <span class="ow">in</span> <span class="n">c</span><span class="p">:</span>
+        <span class="n">anchor</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">elem</span><span class="p">)</span>
+    <span class="k">while</span> <span class="n">c</span><span class="p">:</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">c</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">anchor</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.add_permalink" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">add_permalink</span><span class="p">(</span><span class="n">c</span><span class="p">,</span> <span class="n">elem_id</span><span class="p">)</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">186</span>
+<span class="normal">187</span>
+<span class="normal">188</span>
+<span class="normal">189</span>
+<span class="normal">190</span>
+<span class="normal">191</span>
+<span class="normal">192</span>
+<span class="normal">193</span>
+<span class="normal">194</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">add_permalink</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">c</span><span class="p">,</span> <span class="n">elem_id</span><span class="p">):</span>
+    <span class="n">permalink</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">)</span>
+    <span class="n">permalink</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">para;&quot;</span> <span class="o">%</span> <span class="n">AMP_SUBSTITUTE</span>
+                      <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_permalinks</span> <span class="ow">is</span> <span class="kc">True</span>
+                      <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_permalinks</span><span class="p">)</span>
+    <span class="n">permalink</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;href&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;#&quot;</span> <span class="o">+</span> <span class="n">elem_id</span>
+    <span class="n">permalink</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;class&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;headerlink&quot;</span>
+    <span class="n">permalink</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Permanent link&quot;</span>
+    <span class="n">c</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">permalink</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.build_toc_div" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">build_toc_div</span><span class="p">(</span><span class="n">toc_list</span><span class="p">)</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return a string div given a toc list.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">196</span>
+<span class="normal">197</span>
+<span class="normal">198</span>
+<span class="normal">199</span>
+<span class="normal">200</span>
+<span class="normal">201</span>
+<span class="normal">202</span>
+<span class="normal">203</span>
+<span class="normal">204</span>
+<span class="normal">205</span>
+<span class="normal">206</span>
+<span class="normal">207</span>
+<span class="normal">208</span>
+<span class="normal">209</span>
+<span class="normal">210</span>
+<span class="normal">211</span>
+<span class="normal">212</span>
+<span class="normal">213</span>
+<span class="normal">214</span>
+<span class="normal">215</span>
+<span class="normal">216</span>
+<span class="normal">217</span>
+<span class="normal">218</span>
+<span class="normal">219</span>
+<span class="normal">220</span>
+<span class="normal">221</span>
+<span class="normal">222</span>
+<span class="normal">223</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">build_toc_div</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">toc_list</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return a string div given a toc list.&quot;&quot;&quot;</span>
+    <span class="n">div</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">Element</span><span class="p">(</span><span class="s2">&quot;div&quot;</span><span class="p">)</span>
+    <span class="n">div</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;class&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;toc&quot;</span>
+
+    <span class="c1"># Add title to the div</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span><span class="p">:</span>
+        <span class="n">header</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">div</span><span class="p">,</span> <span class="s2">&quot;span&quot;</span><span class="p">)</span>
+        <span class="n">header</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;class&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;toctitle&quot;</span>
+        <span class="n">header</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span>
+
+    <span class="k">def</span> <span class="nf">build_etree_ul</span><span class="p">(</span><span class="n">toc_list</span><span class="p">,</span> <span class="n">parent</span><span class="p">):</span>
+        <span class="n">ul</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">parent</span><span class="p">,</span> <span class="s2">&quot;ul&quot;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">toc_list</span><span class="p">:</span>
+            <span class="c1"># List item link, to be inserted into the toc div</span>
+            <span class="n">li</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">ul</span><span class="p">,</span> <span class="s2">&quot;li&quot;</span><span class="p">)</span>
+            <span class="n">link</span> <span class="o">=</span> <span class="n">etree</span><span class="o">.</span><span class="n">SubElement</span><span class="p">(</span><span class="n">li</span><span class="p">,</span> <span class="s2">&quot;a&quot;</span><span class="p">)</span>
+            <span class="n">link</span><span class="o">.</span><span class="n">text</span> <span class="o">=</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="n">link</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;href&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;#&#39;</span> <span class="o">+</span> <span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;id&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">item</span><span class="p">[</span><span class="s1">&#39;children&#39;</span><span class="p">]:</span>
+                <span class="n">build_etree_ul</span><span class="p">(</span><span class="n">item</span><span class="p">[</span><span class="s1">&#39;children&#39;</span><span class="p">],</span> <span class="n">li</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">ul</span>
+
+    <span class="n">build_etree_ul</span><span class="p">(</span><span class="n">toc_list</span><span class="p">,</span> <span class="n">div</span><span class="p">)</span>
+    <span class="n">prettify</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">markdown</span><span class="o">.</span><span class="n">treeprocessors</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;prettify&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">prettify</span><span class="p">:</span>
+        <span class="n">prettify</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">div</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">div</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocTreeprocessor.run" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">run</span><span class="p">(</span><span class="n">doc</span><span class="p">)</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">225</span>
+<span class="normal">226</span>
+<span class="normal">227</span>
+<span class="normal">228</span>
+<span class="normal">229</span>
+<span class="normal">230</span>
+<span class="normal">231</span>
+<span class="normal">232</span>
+<span class="normal">233</span>
+<span class="normal">234</span>
+<span class="normal">235</span>
+<span class="normal">236</span>
+<span class="normal">237</span>
+<span class="normal">238</span>
+<span class="normal">239</span>
+<span class="normal">240</span>
+<span class="normal">241</span>
+<span class="normal">242</span>
+<span class="normal">243</span>
+<span class="normal">244</span>
+<span class="normal">245</span>
+<span class="normal">246</span>
+<span class="normal">247</span>
+<span class="normal">248</span>
+<span class="normal">249</span>
+<span class="normal">250</span>
+<span class="normal">251</span>
+<span class="normal">252</span>
+<span class="normal">253</span>
+<span class="normal">254</span>
+<span class="normal">255</span>
+<span class="normal">256</span>
+<span class="normal">257</span>
+<span class="normal">258</span>
+<span class="normal">259</span>
+<span class="normal">260</span>
+<span class="normal">261</span>
+<span class="normal">262</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">doc</span><span class="p">):</span>
+    <span class="c1"># Get a list of id attributes</span>
+    <span class="n">used_ids</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">iter</span><span class="p">():</span>
+        <span class="k">if</span> <span class="s2">&quot;id&quot;</span> <span class="ow">in</span> <span class="n">el</span><span class="o">.</span><span class="n">attrib</span><span class="p">:</span>
+            <span class="n">used_ids</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">])</span>
+
+    <span class="n">toc_tokens</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">el</span> <span class="ow">in</span> <span class="n">doc</span><span class="o">.</span><span class="n">iter</span><span class="p">():</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">tag</span><span class="p">,</span> <span class="n">string_type</span><span class="p">)</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">header_rgx</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">tag</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">set_level</span><span class="p">(</span><span class="n">el</span><span class="p">)</span>
+            <span class="n">text</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">itertext</span><span class="p">())</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+
+            <span class="c1"># Do not override pre-existing ids</span>
+            <span class="k">if</span> <span class="s2">&quot;id&quot;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">el</span><span class="o">.</span><span class="n">attrib</span><span class="p">:</span>
+                <span class="n">innertext</span> <span class="o">=</span> <span class="n">stashedHTML2text</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">markdown</span><span class="p">)</span>
+                <span class="n">el</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">unique</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">slugify</span><span class="p">(</span><span class="n">innertext</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sep</span><span class="p">),</span> <span class="n">used_ids</span><span class="p">)</span>
+
+            <span class="n">toc_tokens</span><span class="o">.</span><span class="n">append</span><span class="p">({</span>
+                <span class="s1">&#39;level&#39;</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">el</span><span class="o">.</span><span class="n">tag</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]),</span>
+                <span class="s1">&#39;id&#39;</span><span class="p">:</span> <span class="n">el</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">],</span>
+                <span class="s1">&#39;name&#39;</span><span class="p">:</span> <span class="n">text</span>
+            <span class="p">})</span>
+
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_anchors</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">add_anchor</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="n">el</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">])</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">use_permalinks</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">add_permalink</span><span class="p">(</span><span class="n">el</span><span class="p">,</span> <span class="n">el</span><span class="o">.</span><span class="n">attrib</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">])</span>
+
+    <span class="n">div</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">build_toc_div</span><span class="p">(</span><span class="n">nest_toc_tokens</span><span class="p">(</span><span class="n">toc_tokens</span><span class="p">))</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">marker</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">replace_marker</span><span class="p">(</span><span class="n">doc</span><span class="p">,</span> <span class="n">div</span><span class="p">)</span>
+
+    <span class="c1"># serialize and attach to markdown instance.</span>
+    <span class="n">toc</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">markdown</span><span class="o">.</span><span class="n">serializer</span><span class="p">(</span><span class="n">div</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">pp</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">markdown</span><span class="o">.</span><span class="n">postprocessors</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>
+        <span class="n">toc</span> <span class="o">=</span> <span class="n">pp</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">toc</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">markdown</span><span class="o">.</span><span class="n">toc</span> <span class="o">=</span> <span class="n">toc</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-class">
+
+
+
+<h3 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">TocExtension</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+          <p class="doc doc-class-bases">
+            Bases: <code><a class="autorefs autorefs-internal" title="pyrevit.coreutils.markdown.extensions.Extension" href="../#pyrevit.coreutils.markdown.extensions.Extension">Extension</a></code></p>
+
+  
+      <p>TOC Markdown extension.</p>
+
+              <details class="quote">
+                <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">270</span>
+<span class="normal">271</span>
+<span class="normal">272</span>
+<span class="normal">273</span>
+<span class="normal">274</span>
+<span class="normal">275</span>
+<span class="normal">276</span>
+<span class="normal">277</span>
+<span class="normal">278</span>
+<span class="normal">279</span>
+<span class="normal">280</span>
+<span class="normal">281</span>
+<span class="normal">282</span>
+<span class="normal">283</span>
+<span class="normal">284</span>
+<span class="normal">285</span>
+<span class="normal">286</span>
+<span class="normal">287</span>
+<span class="normal">288</span>
+<span class="normal">289</span>
+<span class="normal">290</span>
+<span class="normal">291</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">config</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">&quot;marker&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;[TOC]&#39;</span><span class="p">,</span>
+                   <span class="s1">&#39;Text to find and replace with Table of Contents - &#39;</span>
+                   <span class="s1">&#39;Set to an empty string to disable. Defaults to &quot;[TOC]&quot;&#39;</span><span class="p">],</span>
+        <span class="s2">&quot;title&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s2">&quot;&quot;</span><span class="p">,</span>
+                  <span class="s2">&quot;Title to insert into TOC &lt;div&gt; - &quot;</span>
+                  <span class="s2">&quot;Defaults to an empty string&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;anchorlink&quot;</span><span class="p">:</span> <span class="p">[</span><span class="kc">False</span><span class="p">,</span>
+                       <span class="s2">&quot;True if header should be a self link - &quot;</span>
+                       <span class="s2">&quot;Defaults to False&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;permalink&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span>
+                      <span class="s2">&quot;True or link text if a Sphinx-style permalink should &quot;</span>
+                      <span class="s2">&quot;be added - Defaults to False&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;baselevel&quot;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;Base level for headers.&#39;</span><span class="p">],</span>
+        <span class="s2">&quot;slugify&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">slugify</span><span class="p">,</span>
+                    <span class="s2">&quot;Function to generate anchors based on header text - &quot;</span>
+                    <span class="s2">&quot;Defaults to the headerid ext&#39;s slugify function.&quot;</span><span class="p">],</span>
+        <span class="s1">&#39;separator&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;Word separator. Defaults to &quot;-&quot;.&#39;</span><span class="p">]</span>
+    <span class="p">}</span>
+
+    <span class="nb">super</span><span class="p">(</span><span class="n">TocExtension</span><span class="p">,</span> <span class="bp">self</span><span class="p">)</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+              </details>
+
+  
+
+  <div class="doc doc-children">
+
+
+
+
+
+<h4 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension-attributes">Attributes</h4>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension.TreeProcessorClass" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">TreeProcessorClass</span> <span class="o">=</span> <span class="n">TocTreeprocessor</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-class-attribute"><code>class-attribute</code></small>
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+
+<div class="doc doc-object doc-attribute">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension.config" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">config</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;marker&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;[TOC]&#39;</span><span class="p">,</span> <span class="s1">&#39;Text to find and replace with Table of Contents - Set to an empty string to disable. Defaults to &quot;[TOC]&quot;&#39;</span><span class="p">],</span> <span class="s1">&#39;title&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;Title to insert into TOC &lt;div&gt; - Defaults to an empty string&#39;</span><span class="p">],</span> <span class="s1">&#39;anchorlink&#39;</span><span class="p">:</span> <span class="p">[</span><span class="kc">False</span><span class="p">,</span> <span class="s1">&#39;True if header should be a self link - Defaults to False&#39;</span><span class="p">],</span> <span class="s1">&#39;permalink&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;True or link text if a Sphinx-style permalink should be added - Defaults to False&#39;</span><span class="p">],</span> <span class="s1">&#39;baselevel&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;Base level for headers.&#39;</span><span class="p">],</span> <span class="s1">&#39;slugify&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">slugify</span><span class="p">,</span> <span class="s2">&quot;Function to generate anchors based on header text - Defaults to the headerid ext&#39;s slugify function.&quot;</span><span class="p">],</span> <span class="s1">&#39;separator&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="s1">&#39;Word separator. Defaults to &quot;-&quot;.&#39;</span><span class="p">]}</span></code>
+  
+  <span class="doc doc-labels">
+      <small class="doc doc-label doc-label-instance-attribute"><code>instance-attribute</code></small>
+  </span>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  </div>
+
+</div>
+
+<h4 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension-functions">Functions</h4>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension.getConfig" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">getConfig</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">)</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return a setting for the given key or an empty string.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/__init__.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getConfig</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return a setting for the given key or an empty string.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">:</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">default</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension.getConfigs" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">getConfigs</span><span class="p">()</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all configs settings as a dict.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/__init__.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getConfigs</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return all configs settings as a dict.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="nb">dict</span><span class="p">([(</span><span class="n">key</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getConfig</span><span class="p">(</span><span class="n">key</span><span class="p">))</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">keys</span><span class="p">()])</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension.getConfigInfo" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">getConfigInfo</span><span class="p">()</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Return all config descriptions as a list of tuples.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/__init__.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">getConfigInfo</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Return all config descriptions as a list of tuples.&quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">[(</span><span class="n">key</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="mi">1</span><span class="p">])</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">keys</span><span class="p">()]</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension.setConfig" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">setConfig</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Set a config setting for <code>key</code> with the given <code>value</code>.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/__init__.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">setConfig</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Set a config setting for `key` with the given `value`.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nb">bool</span><span class="p">):</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">parseBoolValue</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+    <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">value</span> <span class="o">=</span> <span class="n">parseBoolValue</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">preserve_none</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">config</span><span class="p">[</span><span class="n">key</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension.setConfigs" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">setConfigs</span><span class="p">(</span><span class="n">items</span><span class="p">)</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Set multiple config settings given a dict or list of tuples.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/__init__.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">setConfigs</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">items</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Set multiple config settings given a dict or list of tuples.&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">items</span><span class="p">,</span> <span class="s1">&#39;items&#39;</span><span class="p">):</span>
+        <span class="c1"># it&#39;s a dict</span>
+        <span class="n">items</span> <span class="o">=</span> <span class="n">items</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">items</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">setConfig</span><span class="p">(</span><span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension.extendMarkdown" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">extendMarkdown</span><span class="p">(</span><span class="n">md</span><span class="p">,</span> <span class="n">md_globals</span><span class="p">)</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">293</span>
+<span class="normal">294</span>
+<span class="normal">295</span>
+<span class="normal">296</span>
+<span class="normal">297</span>
+<span class="normal">298</span>
+<span class="normal">299</span>
+<span class="normal">300</span>
+<span class="normal">301</span>
+<span class="normal">302</span>
+<span class="normal">303</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">extendMarkdown</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">md</span><span class="p">,</span> <span class="n">md_globals</span><span class="p">):</span>
+    <span class="n">md</span><span class="o">.</span><span class="n">registerExtension</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">md</span> <span class="o">=</span> <span class="n">md</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">reset</span><span class="p">()</span>
+    <span class="n">tocext</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">TreeProcessorClass</span><span class="p">(</span><span class="n">md</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">getConfigs</span><span class="p">())</span>
+    <span class="c1"># Headerid ext is set to &#39;&gt;prettify&#39;. With this set to &#39;_end&#39;,</span>
+    <span class="c1"># it should always come after headerid ext (and honor ids assinged</span>
+    <span class="c1"># by the header id extension) if both are used. Same goes for</span>
+    <span class="c1"># attr_list extension. This must come last because we don&#39;t want</span>
+    <span class="c1"># to redefine ids after toc is created. But we do want toc prettified.</span>
+    <span class="n">md</span><span class="o">.</span><span class="n">treeprocessors</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s2">&quot;toc&quot;</span><span class="p">,</span> <span class="n">tocext</span><span class="p">,</span> <span class="s2">&quot;_end&quot;</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h5 id="pyrevit.coreutils.markdown.extensions.toc.TocExtension.reset" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">reset</span><span class="p">()</span></code>
+
+</h5>
+
+
+  <div class="doc doc-contents ">
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">305</span>
+<span class="normal">306</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">reset</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">md</span><span class="o">.</span><span class="n">toc</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+<h2 id="pyrevit.coreutils.markdown.extensions.toc-functions">Functions</h2>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyrevit.coreutils.markdown.extensions.toc.slugify" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">slugify</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">separator</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Slugify a string, to make it URL friendly.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">slugify</span><span class="p">(</span><span class="n">value</span><span class="p">,</span> <span class="n">separator</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Slugify a string, to make it URL friendly.&quot;&quot;&quot;</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">unicodedata</span><span class="o">.</span><span class="n">normalize</span><span class="p">(</span><span class="s1">&#39;NFKD&#39;</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">,</span> <span class="s1">&#39;ignore&#39;</span><span class="p">)</span>
+    <span class="n">value</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;[^\w\s-]&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">value</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s1">&#39;ascii&#39;</span><span class="p">))</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="s1">&#39;[</span><span class="si">%s</span><span class="s1">\s]+&#39;</span> <span class="o">%</span> <span class="n">separator</span><span class="p">,</span> <span class="n">separator</span><span class="p">,</span> <span class="n">value</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyrevit.coreutils.markdown.extensions.toc.unique" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">unique</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">ids</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Ensure id is unique in set of ids. Append '_1', '_2'... if not.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">unique</span><span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="n">ids</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Ensure id is unique in set of ids. Append &#39;_1&#39;, &#39;_2&#39;... if not.&quot;&quot;&quot;</span>
+    <span class="k">while</span> <span class="nb">id</span> <span class="ow">in</span> <span class="n">ids</span> <span class="ow">or</span> <span class="ow">not</span> <span class="nb">id</span><span class="p">:</span>
+        <span class="n">m</span> <span class="o">=</span> <span class="n">IDCOUNT_RE</span><span class="o">.</span><span class="n">match</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">m</span><span class="p">:</span>
+            <span class="nb">id</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">_</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">id</span> <span class="o">=</span> <span class="s1">&#39;</span><span class="si">%s</span><span class="s1">_</span><span class="si">%d</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="p">(</span><span class="nb">id</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+    <span class="n">ids</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="nb">id</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">id</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyrevit.coreutils.markdown.extensions.toc.stashedHTML2text" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">stashedHTML2text</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">md</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Extract raw HTML from stash, reduce to plain text and swap with placeholder.</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">stashedHTML2text</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">md</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Extract raw HTML from stash, reduce to plain text and swap with placeholder.&quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">_html_sub</span><span class="p">(</span><span class="n">m</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Substitute raw html with plain text.&quot;&quot;&quot;</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">raw</span><span class="p">,</span> <span class="n">safe</span> <span class="o">=</span> <span class="n">md</span><span class="o">.</span><span class="n">htmlStash</span><span class="o">.</span><span class="n">rawHtmlBlocks</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">1</span><span class="p">))]</span>
+        <span class="k">except</span> <span class="p">(</span><span class="ne">IndexError</span><span class="p">,</span> <span class="ne">TypeError</span><span class="p">):</span>  <span class="c1"># pragma: no cover</span>
+            <span class="k">return</span> <span class="n">m</span><span class="o">.</span><span class="n">group</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">md</span><span class="o">.</span><span class="n">safeMode</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">safe</span><span class="p">:</span>  <span class="c1"># pragma: no cover</span>
+            <span class="k">return</span> <span class="s1">&#39;&#39;</span>
+        <span class="c1"># Strip out tags and entities - leaveing text</span>
+        <span class="k">return</span> <span class="n">re</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;(&lt;[^&gt;]+&gt;)|(&amp;[\#a-zA-Z0-9]+;)&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">raw</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">HTML_PLACEHOLDER_RE</span><span class="o">.</span><span class="n">sub</span><span class="p">(</span><span class="n">_html_sub</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyrevit.coreutils.markdown.extensions.toc.nest_toc_tokens" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">nest_toc_tokens</span><span class="p">(</span><span class="n">toc_list</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+  
+      <p>Given an unsorted list with errors and skips, return a nested one.</p>
+
+
+
+<p><strong>Examples:</strong></p>
+    <p>[{'level': 1}, {'level': 2}]
+=&gt;
+[{'level': 1, 'children': [{'level': 2, 'children': []}]}].</p>
+<p>A wrong list is also converted:
+[{'level': 2}, {'level': 1}]
+=&gt;
+[{'level': 2, 'children': []}, {'level': 1, 'children': []}]</p>
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 60</span>
+<span class="normal"> 61</span>
+<span class="normal"> 62</span>
+<span class="normal"> 63</span>
+<span class="normal"> 64</span>
+<span class="normal"> 65</span>
+<span class="normal"> 66</span>
+<span class="normal"> 67</span>
+<span class="normal"> 68</span>
+<span class="normal"> 69</span>
+<span class="normal"> 70</span>
+<span class="normal"> 71</span>
+<span class="normal"> 72</span>
+<span class="normal"> 73</span>
+<span class="normal"> 74</span>
+<span class="normal"> 75</span>
+<span class="normal"> 76</span>
+<span class="normal"> 77</span>
+<span class="normal"> 78</span>
+<span class="normal"> 79</span>
+<span class="normal"> 80</span>
+<span class="normal"> 81</span>
+<span class="normal"> 82</span>
+<span class="normal"> 83</span>
+<span class="normal"> 84</span>
+<span class="normal"> 85</span>
+<span class="normal"> 86</span>
+<span class="normal"> 87</span>
+<span class="normal"> 88</span>
+<span class="normal"> 89</span>
+<span class="normal"> 90</span>
+<span class="normal"> 91</span>
+<span class="normal"> 92</span>
+<span class="normal"> 93</span>
+<span class="normal"> 94</span>
+<span class="normal"> 95</span>
+<span class="normal"> 96</span>
+<span class="normal"> 97</span>
+<span class="normal"> 98</span>
+<span class="normal"> 99</span>
+<span class="normal">100</span>
+<span class="normal">101</span>
+<span class="normal">102</span>
+<span class="normal">103</span>
+<span class="normal">104</span>
+<span class="normal">105</span>
+<span class="normal">106</span>
+<span class="normal">107</span>
+<span class="normal">108</span>
+<span class="normal">109</span>
+<span class="normal">110</span>
+<span class="normal">111</span>
+<span class="normal">112</span>
+<span class="normal">113</span>
+<span class="normal">114</span>
+<span class="normal">115</span>
+<span class="normal">116</span>
+<span class="normal">117</span>
+<span class="normal">118</span>
+<span class="normal">119</span>
+<span class="normal">120</span>
+<span class="normal">121</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">nest_toc_tokens</span><span class="p">(</span><span class="n">toc_list</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Given an unsorted list with errors and skips, return a nested one.</span>
+
+<span class="sd">    Examples:</span>
+<span class="sd">        [{&#39;level&#39;: 1}, {&#39;level&#39;: 2}]</span>
+<span class="sd">        =&gt;</span>
+<span class="sd">        [{&#39;level&#39;: 1, &#39;children&#39;: [{&#39;level&#39;: 2, &#39;children&#39;: []}]}].</span>
+
+<span class="sd">        A wrong list is also converted:</span>
+<span class="sd">        [{&#39;level&#39;: 2}, {&#39;level&#39;: 1}]</span>
+<span class="sd">        =&gt;</span>
+<span class="sd">        [{&#39;level&#39;: 2, &#39;children&#39;: []}, {&#39;level&#39;: 1, &#39;children&#39;: []}]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">ordered_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">toc_list</span><span class="p">):</span>
+        <span class="c1"># Initialize everything by processing the first entry</span>
+        <span class="n">last</span> <span class="o">=</span> <span class="n">toc_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">last</span><span class="p">[</span><span class="s1">&#39;children&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="n">levels</span> <span class="o">=</span> <span class="p">[</span><span class="n">last</span><span class="p">[</span><span class="s1">&#39;level&#39;</span><span class="p">]]</span>
+        <span class="n">ordered_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">last</span><span class="p">)</span>
+        <span class="n">parents</span> <span class="o">=</span> <span class="p">[]</span>
+
+        <span class="c1"># Walk the rest nesting the entries properly</span>
+        <span class="k">while</span> <span class="n">toc_list</span><span class="p">:</span>
+            <span class="n">t</span> <span class="o">=</span> <span class="n">toc_list</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+            <span class="n">current_level</span> <span class="o">=</span> <span class="n">t</span><span class="p">[</span><span class="s1">&#39;level&#39;</span><span class="p">]</span>
+            <span class="n">t</span><span class="p">[</span><span class="s1">&#39;children&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+
+            <span class="c1"># Reduce depth if current level &lt; last item&#39;s level</span>
+            <span class="k">if</span> <span class="n">current_level</span> <span class="o">&lt;</span> <span class="n">levels</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="c1"># Pop last level since we know we are less than it</span>
+                <span class="n">levels</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+
+                <span class="c1"># Pop parents and levels we are less than or equal to</span>
+                <span class="n">to_pop</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="nb">reversed</span><span class="p">(</span><span class="n">parents</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">current_level</span> <span class="o">&lt;=</span> <span class="n">p</span><span class="p">[</span><span class="s1">&#39;level&#39;</span><span class="p">]:</span>
+                        <span class="n">to_pop</span> <span class="o">+=</span> <span class="mi">1</span>
+                    <span class="k">else</span><span class="p">:</span>  <span class="c1"># pragma: no cover</span>
+                        <span class="k">break</span>
+                <span class="k">if</span> <span class="n">to_pop</span><span class="p">:</span>
+                    <span class="n">levels</span> <span class="o">=</span> <span class="n">levels</span><span class="p">[:</span><span class="o">-</span><span class="n">to_pop</span><span class="p">]</span>
+                    <span class="n">parents</span> <span class="o">=</span> <span class="n">parents</span><span class="p">[:</span><span class="o">-</span><span class="n">to_pop</span><span class="p">]</span>
+
+                <span class="c1"># Note current level as last</span>
+                <span class="n">levels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">current_level</span><span class="p">)</span>
+
+            <span class="c1"># Level is the same, so append to</span>
+            <span class="c1"># the current parent (if available)</span>
+            <span class="k">if</span> <span class="n">current_level</span> <span class="o">==</span> <span class="n">levels</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+                <span class="p">(</span><span class="n">parents</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s1">&#39;children&#39;</span><span class="p">]</span> <span class="k">if</span> <span class="n">parents</span>
+                 <span class="k">else</span> <span class="n">ordered_list</span><span class="p">)</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+
+            <span class="c1"># Current level is &gt; last item&#39;s level,</span>
+            <span class="c1"># So make last item a parent and append current as child</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">last</span><span class="p">[</span><span class="s1">&#39;children&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>
+                <span class="n">parents</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">last</span><span class="p">)</span>
+                <span class="n">levels</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">current_level</span><span class="p">)</span>
+            <span class="n">last</span> <span class="o">=</span> <span class="n">t</span>
+
+    <span class="k">return</span> <span class="n">ordered_list</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+<div class="doc doc-object doc-function">
+
+
+
+<h3 id="pyrevit.coreutils.markdown.extensions.toc.makeExtension" class="doc doc-heading">
+<code class="highlight language-python"><span class="n">makeExtension</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span></code>
+
+</h3>
+
+
+  <div class="doc doc-contents ">
+
+          <details class="quote">
+            <summary>Source code in <code>pyrevitlib/pyrevit/coreutils/markdown/extensions/toc.py</code></summary>
+            <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">309</span>
+<span class="normal">310</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">makeExtension</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">TocExtension</span><span class="p">(</span><span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+          </details>
+  </div>
+
+</div>
+
+
+
+  </div>
+
+  </div>
+
+</div>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../../../../../..", "features": [], "search": "../../../../../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../../assets/javascripts/bundle.4e31edb1.min.js"></script>
+      
+    
+  </body>
+</html>
