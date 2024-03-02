@@ -35,6 +35,9 @@ namespace PyRevitLabs.PyRevit.Runtime {
                                        "<meta name=\"appversion\" content=\"{0}\" />" +
                                        "<meta name=\"rendererversion\" content=\"{1}\" />" +
                                        "<link rel=\"stylesheet\" href=\"file:///{2}\">" +
+                                       "<link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">" +
+                                       "<link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>" +
+                                       "<link href=\"https://fonts.googleapis.com/css2?family=Noto+Color+Emoji&family=Noto+Sans+Mono:wght@100..900&display=swap\" rel=\"stylesheet\">" +
                                        "</head>";
         public static string DefaultBlock = "<div class=\"entry\"></div>";
         public static string ErrorBlock = "<div class=\"errorentry\"></div>";
