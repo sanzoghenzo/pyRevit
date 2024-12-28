@@ -10,11 +10,14 @@ Examples:
 import re
 import copy
 from itertools import tee
-from collections import OrderedDict, Callable   #pylint: disable=E0611
+from collections import OrderedDict
 
 from pyrevit.compat import PY2
 if PY2:
     from itertools import izip as zip
+    from collections import Callable
+else:
+    from collections.abc import Callable
 
 
 class DefaultOrderedDict(OrderedDict):
