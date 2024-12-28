@@ -21,8 +21,8 @@ class TestClass(unittest.TestCase):
     def test_pyrevit_forms(self):
         """PyRevit forms compatibility with CPython."""
         try:
-            from pyrevit.forms import show_balloon
-            show_balloon("It works!", "pyRevit forms is working under CPython")
+            from pyrevit.forms import toast
+            toast("pyRevit forms is working under CPython", title="It works!")
         except Exception as err:
             print(err)
             self.fail(err)

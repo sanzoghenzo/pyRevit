@@ -6,7 +6,6 @@ Examples:
     ```
 """
 
-#pylint: disable=W0703,C0302,C0103,W0614,E0401,W0611,C0413,ungrouped-imports
 import os.path as op
 from pyrevit.compat import IRONPY, NETCORE, PY2
 
@@ -108,12 +107,13 @@ else:
 import IronPython
 
 # WPF
-wpf = None
 if IRONPY:
     wpf_assmname = '{prefix}IronPython.Wpf'.format(prefix=eng.EnginePrefix)
     wpf_dllpath = op.join(eng.EnginePath, wpf_assmname + ASSEMBLY_FILE_EXT)
     clr.AddReferenceToFileAndPath(wpf_dllpath)
     import wpf
+else:
+    from . import wpf
 
 
 # SQLite
@@ -127,23 +127,20 @@ else:
 import sqlite3
 
 
-
-CPDialogs = None
 try:
     clr.AddReference('Microsoft.WindowsAPICodePack')
     clr.AddReference('Microsoft.WindowsAPICodePack.Shell')
     import Microsoft.WindowsAPICodePack.Dialogs as CPDialogs #pylint: disable=ungrouped-imports
 except Exception:
-    pass
+    CPDialogs = None
 
 
 # try loading some utility modules shipped with revit
-NSJson = None
 try:
     clr.AddReference('pyRevitLabs.Json')
     import pyRevitLabs.Json as NSJson
 except Exception:
-    pass
+    NSJson = None
 
 clr.AddReference('pyRevitLabs.Emojis')
 import pyRevitLabs.Emojis as Emojis
