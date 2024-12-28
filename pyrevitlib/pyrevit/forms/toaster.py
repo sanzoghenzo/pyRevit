@@ -11,8 +11,7 @@ from pyrevit import ROOT_BIN_DIR
 from pyrevit.coreutils.logger import get_logger
 
 
-#pylint: disable=W0703,C0302
-mlogger = get_logger(__name__)  #pylint: disable=C0103
+mlogger = get_logger(__name__)
 
 
 def get_toaster():
