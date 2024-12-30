@@ -10,8 +10,10 @@ from .alerts import check_selection
 from .alerts import check_viewtype
 from .alerts import check_workshared
 from .alerts import inform_wip
-# from .balloon import show_balloon
+from .balloon import show_balloon
 from .command_switch_window import CommandSwitchWindow
+from .controls import Reactive
+from .controls import reactive
 from .dockable_panel import is_registered_dockable_panel
 from .dockable_panel import open_dockable_panel
 from .dockable_panel import register_dockable_panel
@@ -41,6 +43,7 @@ from .list_selector import select_views
 from .list_selector import select_viewtemplates
 from .progress_bar import ProgressBar
 from .search_prompt import SearchPrompt
+from .select_from_list import SelectFromList
 from .toaster import send_toast as toast
 from .warning_bar import WarningBar
 from .wpf_panel import WPFPanel
@@ -50,6 +53,7 @@ from .wpf_window import WPFWindow
 __all__ = [
     "CommandSwitchWindow",
     "ProgressBar",
+    "Reactive",
     "SearchPrompt",
     "SelectFromList",
     "WarningBar",
@@ -77,6 +81,7 @@ __all__ = [
     "pick_excel_file",
     "pick_file",
     "pick_folder",
+    "reactive",
     "register_dockable_panel",
     "save_excel_file",
     "save_file",
@@ -92,6 +97,6 @@ __all__ = [
     "select_titleblocks",
     "select_views",
     "select_viewtemplates",
-    # "show_balloon",
+    "show_balloon",
     "toast",
 ]

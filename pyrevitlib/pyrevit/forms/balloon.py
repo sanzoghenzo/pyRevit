@@ -1,5 +1,8 @@
-import Autodesk.Windows.ComponentManager
-import Autodesk.Internal.InfoCenter
+import clr
+clr.AddReference('AdWindows')
+
+from  Autodesk.Windows import ComponentManager
+from Autodesk.Internal import InfoCenter
 
 
 def result_item_result_clicked(sender, e, debug=False):
@@ -38,7 +41,7 @@ def show_balloon(
         forms.show_balloon("my header", "Lorem ipsum", tooltip='tooltip',   group='group', is_favourite=True, is_new=True, timestamp = date, click_result = forms.result_item_result_clicked)
         ```
     """
-    result_item = Autodesk.Internal.InfoCenter.ResultItem()
+    result_item = InfoCenter.ResultItem()
     result_item.Category = header
     result_item.Title = text
     result_item.TooltipText = tooltip
@@ -48,7 +51,4 @@ def show_balloon(
     if timestamp:
         result_item.Timestamp = timestamp
     result_item.ResultClicked += click_result
-    balloon = Autodesk.Windows.ComponentManager.InfoCenterPaletteManager.ShowBalloon(
-        result_item
-    )
-    return balloon
+    return ComponentManager.InfoCenterPaletteManager.ShowBalloon(result_item)
