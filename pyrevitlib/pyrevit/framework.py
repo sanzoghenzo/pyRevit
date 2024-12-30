@@ -113,7 +113,7 @@ if IRONPY:
     clr.AddReferenceToFileAndPath(wpf_dllpath)
     import wpf
 else:
-    from . import wpf
+    from . import wpf_pythonnet as wpf
 
 
 # SQLite

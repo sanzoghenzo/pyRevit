@@ -1,4 +1,3 @@
-# import os.path
 import clr
 from collections import deque
 
@@ -13,18 +12,18 @@ from System.Xaml import XamlObjectWriterSettings
 from System.Xaml.Schema import XamlMemberInvoker
 
 
-def LoadComponent(root, filename):
+def LoadComponent(scope, filename):
     # TODO: handle streams and strings as well
     reader = XamlXmlReader(StreamReader(filename), XamlReader.GetWpfSchemaContext())
     settings = XamlObjectWriterSettings()
-    settings.RootObjectInstance = root
-    writer = _DynamicWriter(root, reader.SchemaContext, settings)
+    settings.RootObjectInstance = scope
+    writer = _DynamicWriter(scope, reader.SchemaContext, settings)
     while reader.Read():
         writer.WriteNode(reader)
     for name in writer.names:
         value = writer.RootNameScope.FindName(name)
         if value is not None:
-            setattr(root, name, value)
+            setattr(scope, name, value)
     return writer.Result
 
 
